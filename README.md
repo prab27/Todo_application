@@ -5,11 +5,13 @@ A full-stack todo application built with the MERN stack (MongoDB, Express.js, Re
 ## Features
 
 - 🔐 **User Authentication**
+
   - Secure login system
   - JWT-based authentication
   - Demo user accounts for quick testing
 
 - 📝 **Todo Management**
+
   - Create, read, update, and delete todos
   - Mark todos as complete/incomplete
   - Priority levels (High, Medium, Low)
@@ -18,6 +20,7 @@ A full-stack todo application built with the MERN stack (MongoDB, Express.js, Re
   - Mention other users in todos
 
 - 🔍 **Advanced Filtering & Sorting**
+
   - Filter by priority
   - Filter by completion status
   - Filter by tags
@@ -26,6 +29,7 @@ A full-stack todo application built with the MERN stack (MongoDB, Express.js, Re
   - Pagination support
 
 - 👥 **User Features**
+
   - User profiles
   - User mentions in todos
   - User listing
@@ -36,9 +40,18 @@ A full-stack todo application built with the MERN stack (MongoDB, Express.js, Re
   - Error handling
   - Clean and intuitive interface
 
+## Demo
+
+Watch our application demo video to see all features in action:
+
+[![Todo App Demo](https://img.youtube.com/vi/4vpnslLZyTA/0.jpg)](https://www.youtube.com/watch?v=4vpnslLZyTA)
+
+Click the image above to watch the demo video on YouTube.
+
 ## Prerequisites
 
 Before running the application, make sure you have the following installed:
+
 - Node.js (v14 or higher)
 - MongoDB (v4.4 or higher)
 - npm (v6 or higher)
@@ -46,6 +59,7 @@ Before running the application, make sure you have the following installed:
 ## Installation & Setup
 
 ### 1. Clone the Repository
+
 ```bash
 git clone <repository-url>
 cd todo
@@ -84,6 +98,7 @@ npm install
 ## Running the Application
 
 ### 1. Start MongoDB
+
 Make sure your MongoDB server is running locally or update the MONGODB_URI in the backend .env file with your MongoDB connection string.
 
 ### 2. Start Backend Server
@@ -128,11 +143,13 @@ Password: password123
 ## API Endpoints
 
 ### Authentication
+
 - POST `/api/auth/register` - Register new user
 - POST `/api/auth/login` - Login user
 - GET `/api/auth/me` - Get current user
 
 ### Todos
+
 - GET `/api/todos` - Get all todos (with filters)
 - POST `/api/todos` - Create new todo
 - GET `/api/todos/:id` - Get specific todo
@@ -141,6 +158,7 @@ Password: password123
 - POST `/api/todos/:id/notes` - Add note to todo
 
 ### Users
+
 - GET `/api/users` - Get all users
 - GET `/api/users/:id` - Get specific user
 
@@ -170,6 +188,7 @@ todo/
 ## Environment Variables
 
 ### Backend (.env)
+
 ```
 MONGODB_URI=mongodb://localhost:27017/todoapp
 JWT_SECRET=your_jwt_secret_here
@@ -178,6 +197,7 @@ PORT=5000
 ```
 
 ### Frontend (.env)
+
 ```
 REACT_APP_API_URL=http://localhost:5000/api
 ```
